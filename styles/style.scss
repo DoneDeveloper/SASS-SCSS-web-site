@@ -1,0 +1,122 @@
+$c : #c6538c;
+//Gloval styling
+html {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    font-family: 'Lobster Two', cursive;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Lobster Two', cursive;
+    font-weight: lighter;
+
+}
+h2{
+    font-size: 8rem;
+    font-family: 'Lobster Two', cursive;
+    font-weight: lighter;
+}
+h3{
+    font-size: 3.5rem;
+}
+h4{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+li{
+    font-size: 2rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@import "home";
+@import "features";
+@import "soon";
+@import "footer";
+
+
+@media screen and (max-width:1275px){
+    html{
+        font-size: -50%;
+    }
+    .nav-container{
+        margin:0;
+        padding:0;
+        nav{
+            width: 100%;}
+        #logo{
+        flex:2;}
+        ul{
+            flex:1;
+            li{
+                margin-left:5rem;
+            }
+        }
+    }
+    .showcase{
+        grid-template-columns: 5% 1fr 5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h2,img,.info{
+            grid-column: 2/3;
+            text-align:center;
+            justify-self: center;
+        }
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }  
+    
+    .features-container{
+        .waves{
+            height: 50%;
+            top: 50%;
+        }
+        h2{
+            text-align: center;
+        }
+        .cards{    
+            align-items: center;
+            margin: 0;
+            padding:0;
+            padding-bottom: 100px;
+            flex-direction: column;
+        .card{
+            margin-top: 50px;
+            width: 70%;
+            overflow: scroll;
+        }
+    }
+    }
+    .soon{
+        padding-top: 19px;
+        object-fit: contain;
+    #circle{
+
+        width: 100%;
+    }
+    #cam{
+        width: 100%;
+    }
+    h2{
+        top: 35%px;
+        width: 100%;
+        text-align:center;
+    }
+    } 
+}
